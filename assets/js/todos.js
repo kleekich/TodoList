@@ -7,7 +7,7 @@ $('ul').on("click", "li", function(){
 
 
 //Click on X to delete Todo
-$("span").click(function(event) {
+$("ul").on("click", "span", function(event) {
 	//removing whole li by calling parent()
 	$(this).parent().fadeOut(1000, function() {
 		$(this).remove();
