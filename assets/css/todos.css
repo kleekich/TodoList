@@ -23,6 +23,9 @@ body {
     background: linear-gradient(to right, #FFEDBC, #ED4264);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+.fa-plus {
+	float:right;
+}
 
 li {
 	background: white;
@@ -33,6 +36,22 @@ li {
 
 li:nth-child(2n){
 	background: #f7f7f7;
+}
+span {
+	background: #e74c3c;
+	height: 40px;
+	margin-right:20px;
+	text-align:center;
+	color:white;
+	width:0;
+	display: inline-block;
+	transition: 0.2s linear;
+
+}
+
+li:hover span {
+	width: 40px;
+
 }
 
 input{
