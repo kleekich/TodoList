@@ -1,6 +1,7 @@
 
 // Check Off Specific Todos By Clicking
-$('li').click( function(){
+//"When li is clicked in ul does callback function"
+$('ul').on("click", "li", function(){
 	$(this).toggleClass("completed");
 });
 
