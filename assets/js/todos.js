@@ -1,23 +1,35 @@
-$('li').click( function(){
-	//if li is gray
-	if($(this).css("color")==="rgb(128, 128, 128)"){
-		console.log("It is currently gray!");
-		//turn it black
-		$(this).css(
-			{
-				textDecoration: "none",
-				color: "black"
-			}
 
-		);
-	}else{
-		$(this).css(
-			{
-				textDecoration: "line-through",
-				color: "gray"
-			}
-		);
-	}
-	
-	
+// Check Off Specific Todos By Clicking
+$('li').click( function(){
+	$(this).toggleClass("completed");
 });
+
+
+//Click on X to delete Todo
+$("span").click(function(event) {
+	alert("clicked a span");
+
+	//stop bubbling up for event
+	event.stopPropagation()
+
+});
+
+
+//Click on X to delete Todo
+$("ul").click(function() {
+	alert("clicked a ul");
+
+});
+
+//Click on X to delete Todo
+$("#container").click(function() {
+	alert("clicked a container");
+
+});
+//Click on X to delete Todo
+$("body").click(function() {
+	alert("clicked a body");
+
+});
+
+
