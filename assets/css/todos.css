@@ -1,10 +1,28 @@
+h1 {
+	background: #2980b9;
+	color: white;
+	/*//margin: 10px;*/
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
 #container {
-	border: 1px solid gray;
+	font-family: 'Roboto', sans-serif;
 	width: 360px;
-	margin: 0 auto;
+	margin: 100px auto;
+	background: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
 }
 
 .completed {
 	text-decoration: line-through;
 	color: gray;
 }
+
