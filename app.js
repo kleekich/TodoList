@@ -1,10 +1,14 @@
 var express = require("express");
 var app = express();
 
+app.use(express.static('assets'));
+
 app.get("/", function(req, res){
-	res.send("Hi");
+	res.sendFile("index.html");
 })
 
-app.listen(3000, function(){
-	console.log("Server started!");
+var port = process.env.PORT || 3000;
+
+app.listen(port, function(){
+	console.log("Server started at port: " + port);
 })
