@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kleekich/TodoList/issues"
   },
-  "homepage": "https://github.com/kleekich/TodoList#readme"
+  "homepage": "https://github.com/kleekich/TodoList#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
